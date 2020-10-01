@@ -1,102 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-  font-family: "Avenir Next";
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  font-family: "Poppins";
+}
+
+header {
+  position: absolute;
+  top: 0;
+  background-color: lightskyblue;
+  padding: 20px 0;
+  width: 100%;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  max-width: 90%;
+}
+
+nav h1 {
+  font-size: 2em;
+  color: cornflowerblue;
 }
 
 li {
   list-style: none;
 }
 
-.header {
-  background-color: #26d0c9;
-  color: #fff;
-  height: 90px;
+nav ul li {
+  display: inline;
+  margin: 0 20px;
+  color: white;
+  z-index: 1;
 }
 
-.header-logo {
-  float: left;
-  font-size: 36px;
-  padding: 20px 40px;
+.banner {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
-.header-list li {
-  float: left;
-  padding: 33px 20px;
+.banner h1 {
+  font-size: 6em;
 }
 
-.main {
-  padding: 100px 80px;
+h1 :nth-child(1) {
+  color: red;
 }
 
-.copy-container h1 {
-  font-size: 140px;
+h3 {
+  text-align: center;
+  font-size: 2em;
+  border-bottom: 3px solid peachpuff;
 }
 
-.copy-container h2 {
-  font-size: 60px;
-}
-
-.copy-container span {
-  color: #ff4a4a;
-}
-
-.contents {
-  height: 500px;
-  margin-top: 100px;
-}
-
-.section-title {
-  border-bottom: 2px solid #dee7ec;
-  font-size: 28px;
-  padding-bottom: 15px;
-  margin-bottom: 50px;
-}
-
-.contents-item {
-  float: left;
-  margin-right: 40px;
-}
-
-.contents-item p {
-  font-size: 24px;
-  margin-top: 30px;
-}
-
+.content,
 .contact-form {
-  padding-top: 100px;
+  max-width: 100%;
+  margin: 20px 100px;
+  min-height: 80vh;
 }
 
-/* Tambahkan CSS untuk tags <input> dan <textarea> */
+.content-item {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 20px 0;
+}
+
+.content-card img {
+  border-radius: 20px;
+}
+
+.content-card p {
+  text-align: center;
+}
+
+.form {
+  max-width: 50%;
+  margin: auto;
+  padding: 30px 0;
+}
+
 input,
 textarea {
-  width: 400px;
-  margin: 10px 0 30px;
   padding: 20px;
-  font-size: 18px;
-  border: 1px solid #dee7ec;
+  width: 100%;
+  margin: 10px 0;
+  border: 1px solid whitesmoke;
 }
 
-/* Tambahkan CSS untuk contact-submit */
-.contact-submit {
-  background-color: #dee7ec;
-  color: #889eab;
-}
-
-.footer {
-  background-color: #2f5167;
-  color: #fff;
-  height: 120px;
-  padding: 40px;
+footer {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  bottom: 0;
+  background-color: #222;
+  color: whitesmoke;
+  padding: 20px 50px;
+  width: 100%;
 }
 
 .footer-logo {
-  float: left;
-  font-size: 32px;
+  font-size: 2em;
 }
 
-.footer-list {
-  float: right;
-}
-
-.footer-list li {
-  padding-bottom: 20px;
+.footer-list ul li {
+  margin: 20px 0;
 }
