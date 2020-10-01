@@ -121,3 +121,39 @@ footer {
 .footer-list ul li {
   margin: 20px 0;
 }
+
+@media (max-width: 940px) {
+  nav {
+    flex-direction: column;
+  }
+
+  nav ul li {
+    margin: 0 10px;
+  }
+
+  .banner h1 {
+    font-size: 2.8em;
+  }
+
+  .content,
+  .contact-form {
+    margin: 20px;
+  }
+
+  .content-item {
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .content-card {
+    margin: 20px;
+  }
+
+  .form {
+    max-width: 80%;
+  }
+
+  footer {
+    align-items: center;
+  }
+}
